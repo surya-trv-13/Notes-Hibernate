@@ -1,8 +1,33 @@
 .blue{
 	background: #5DAAE0;
 }
-
 .orange{
 	background: #FC7500;
 	color: #ffffff;
+}
+.orange:hover{
+	background: #80CF12;
+	color: #ffffff;
+}
+.textarea{
+	height: 30vh;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

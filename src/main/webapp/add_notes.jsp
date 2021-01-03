@@ -10,28 +10,28 @@
 <body>
 	<div class="container">
 		<%@include file="navbar.jsp"%>
-		<h1>This is Add notes</h1>
+		<h3>Add notes here...</h3>
 
 		<!-- This is add form -->
 		<form>
 			<div class="mb-3">
-				<label for="exampleInputEmail1" class="form-label">Email
-					address</label> <input type="email" class="form-control"
-					id="exampleInputEmail1" aria-describedby="emailHelp">
-				<div id="emailHelp" class="form-text">We'll never share your
-					email with anyone else.</div>
+				<label for="title" class="form-label"> Notes Title </label> 
+				<input
+					type="text" class="form-control" id="title"
+					placeholder="Enter Here..."
+					required>
 			</div>
 			<div class="mb-3">
-				<label for="exampleInputPassword1" class="form-label">Password</label>
-				<input type="password" class="form-control"
-					id="exampleInputPassword1">
+				<label for="content" class="form-label">Notes Content</label>
+				<textarea 
+					id="content" 
+					class="form-control textarea" 
+					placeholder="Enter your Note content here..."
+					required></textarea>
 			</div>
-			<div class="mb-3 form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<label class="form-check-label" for="exampleCheck1">Check me
-					out</label>
+			<div class="container text-center">
+				<button type="submit" class="btn orange">Add</button>
 			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
 		</form>
 	</div>
 </body>
