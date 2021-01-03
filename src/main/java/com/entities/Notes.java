@@ -14,7 +14,7 @@ public class Notes {
 	}
 	public Notes(String title, String content, Date addedDate) {
 		super();
-		this.id = new Random().nextInt();
+		this.id = new Random().nextInt(10000);
 		this.title = title;
 		this.content = content;
 		this.addedDate = addedDate;

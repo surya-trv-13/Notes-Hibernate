@@ -5,9 +5,7 @@
     
    <hibernate-mapping package="com.entites">
    	<class name="Notes" table="notes">
-   		<id name="id" column="notes_id">
-   			<generator class="increment"></generator>
-   		</id>
+   		<id name="id" column="notes_id" />
    		<property name="title" type="string">
    			<column name="note_title"></column>
    		</property>
