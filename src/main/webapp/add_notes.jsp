@@ -20,6 +20,7 @@
 					name="title"
 					type="text" class="form-control" id="title"
 					placeholder="Enter Here..."
+					autocomplete="off"
 					required>
 			</div>
 			<div class="mb-3">
@@ -29,6 +30,7 @@
 					id="content" 
 					class="form-control textarea" 
 					placeholder="Enter your Note content here..."
+					autocomplete="off"
 					required></textarea>
 			</div>
 			<div class="container text-center">

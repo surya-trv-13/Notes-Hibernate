@@ -22,8 +22,8 @@
 				<%
 					Session s = FactoryProvider.getFactory().openSession();
 				Transaction tx = s.beginTransaction();
-				Query query = s.createQuery("from Notes");
-				List<Notes> list = query.list();
+				
+				List<Notes> list = s.createQuery("from Notes").getResultList();
 
 				for (Notes note : list) {
 				%>
@@ -34,7 +34,7 @@
 						<h5 class="card-title"><%=note.getTitle()%></h5>
 						<p class="card-text"><%=note.getContent()%></p>
 						<div class="container text-center mt-2">
-							<a href="#" class="btn btn-danger">Delete</a> 
+							<a href="DeleteNoteServlet?noteId=<%= note.getId() %>" class="btn btn-danger">Delete</a> 
 							<a href="#" class="btn btn-success">Update</a>
 						</div>
 					</div>

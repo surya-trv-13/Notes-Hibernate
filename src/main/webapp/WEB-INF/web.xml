@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>com.servlet.AddNoteServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DeleteNoteServlet</servlet-name>
+  	<display-name>DeleteNoteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.DeleteNoteServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>AddNoteServlet</servlet-name>
   	<url-pattern>/AddNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteNoteServlet</servlet-name>
+  	<url-pattern>/DeleteNoteServlet</url-pattern>
   </servlet-mapping>
 </web-app>

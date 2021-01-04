@@ -12,22 +12,15 @@
 .textarea{
 	height: 30vh;
 }
-/* width */
 ::-webkit-scrollbar {
-  width: 1vw;
+  width: 0.5vw;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #817c50;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #fc7500;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #fc7500;
 }
