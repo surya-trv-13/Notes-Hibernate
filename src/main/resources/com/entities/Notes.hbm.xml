@@ -9,8 +9,8 @@
    		<property name="title" type="string">
    			<column name="note_title"></column>
    		</property>
-   		<property name="content" type="string">
-   			<column name="note_content"></column>
+   		<property name="content" type="string" length="1500">
+   			<column name="note_content" length="2000"></column>
    		</property>
    		<property name="addedDate" type="java.util.Date">
    			<column name="note_date"></column>
