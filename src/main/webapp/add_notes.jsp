@@ -13,17 +13,19 @@
 		<h3>Add notes here...</h3>
 
 		<!-- This is add form -->
-		<form>
+		<form method="post" action="AddNoteServlet">
 			<div class="mb-3">
 				<label for="title" class="form-label"> Notes Title </label> 
 				<input
+					name="title"
 					type="text" class="form-control" id="title"
 					placeholder="Enter Here..."
 					required>
 			</div>
 			<div class="mb-3">
 				<label for="content" class="form-label">Notes Content</label>
-				<textarea 
+				<textarea
+					name="content" 
 					id="content" 
 					class="form-control textarea" 
 					placeholder="Enter your Note content here..."
