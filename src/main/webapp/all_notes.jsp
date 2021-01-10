@@ -23,7 +23,7 @@
 					Session s = FactoryProvider.getFactory().openSession();
 				Transaction tx = s.beginTransaction();
 				
-				List<Notes> list = s.createQuery("from Notes").getResultList();
+				List<Notes> list = s.createQuery("from Notes").list();
 
 				for (Notes note : list) {
 				%>
